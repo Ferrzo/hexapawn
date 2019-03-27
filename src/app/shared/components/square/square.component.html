@@ -1,3 +1,16 @@
-<p>
-  square
-</p>
+<mat-card
+  class="card"
+  [ngClass]="{ 'card--selected': isSelected }"
+  (click)="select()"
+>
+  <mat-card-content>
+    <p></p>
+    <!-- <div
+      [ngClass]="{
+        'owned--blue': (squareInfo.ocuppied.blue === squareInfo.ocuppied.blue),
+        'owned--red': (squareInfo.ocuppied.red === squareInfo.ocuppied.red),
+        'owned--none': (squareInfo.ocuppied.none === squareInfo.ocuppied.none)
+      }"
+    >{{squareInfo.ocuppied}}</div> -->
+  </mat-card-content>
+</mat-card>
